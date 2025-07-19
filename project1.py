@@ -15,7 +15,7 @@ def sptext():
         try:
             audio=recognizer.listen(source, timeout=5)
             print("Recognizing...")
-            data= ]recognizer.recognize_google(audio)
+            data=recognizer.recognize_google(audio)
             print("You said:", data)
             return data.lower()
         except sr.UnknownValueError:
