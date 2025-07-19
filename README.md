@@ -21,11 +21,13 @@ The project consists of two main components:
 - **Cartoon Generation**: Multiple artistic filters and effects
 - **File Management**: Secure upload/download with validation
 
-### Frontend (React) - Coming Soon
-- **Modern UI**: Beautiful, responsive interface
-- **Drag & Drop**: Easy image upload
-- **Real-time Preview**: See results instantly
+### Frontend (React)
+- **Modern UI**: Beautiful, responsive interface with Tailwind CSS
+- **Drag & Drop**: Easy image upload with visual feedback
+- **Real-time Preview**: See uploaded images instantly
 - **Multiple Styles**: Choose from various cartoon effects
+- **Smooth Animations**: Powered by Framer Motion
+- **Mobile Responsive**: Works perfectly on all devices
 
 ## 🚀 Quick Start
 
@@ -59,13 +61,21 @@ The project consists of two main components:
    - Open http://localhost:8000/docs for interactive API documentation
    - Open http://localhost:8000/health for health check
 
-### Frontend Setup (Coming Soon)
+### Frontend Setup
 
-```bash
-cd frontend
-npm install
-npm start
-```
+1. **Install dependencies and start**:
+   ```bash
+   # Option 1: Use the startup script (recommended)
+   ./start_frontend.sh
+   
+   # Option 2: Manual setup
+   cd frontend
+   npm install
+   npm start
+   ```
+
+2. **Open your browser**:
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
 ## 📖 API Documentation
 
