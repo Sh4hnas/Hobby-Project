@@ -2,11 +2,11 @@ import os
 from pathlib import Path
 
 # Base directory
-BASE_DIR = Path(__file__).parent.parent
+BASE_DIR = Path(__file__).parent
 
 # Upload and generated directories
-UPLOAD_DIR = BASE_DIR / "uploads"
-GENERATED_DIR = BASE_DIR / "generated"
+UPLOAD_DIR = BASE_DIR.parent / "uploads"
+GENERATED_DIR = BASE_DIR.parent / "generated"
 DATA_DIR = BASE_DIR / "data"
 CELEBRITY_DIR = DATA_DIR / "celebrities"
 

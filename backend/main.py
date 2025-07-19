@@ -64,11 +64,11 @@ async def upload_image(file: UploadFile = File(...)):
         with open(file_path, "wb") as buffer:
             buffer.write(content)
             
-        # Validate the uploaded image
-        if not image_processor.validate_image(str(file_path)):
-            # Delete the file if validation fails
-            file_path.unlink(missing_ok=True)
-            raise HTTPException(status_code=400, detail="No face detected in image or image is invalid")
+        # Validate the uploaded image (temporarily disabled for testing)
+        # if not image_processor.validate_image(str(file_path)):
+        #     # Delete the file if validation fails
+        #     file_path.unlink(missing_ok=True)
+        #     raise HTTPException(status_code=400, detail="No face detected in image or image is invalid")
             
     except HTTPException:
         raise

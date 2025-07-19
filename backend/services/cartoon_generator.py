@@ -5,6 +5,7 @@ import os
 from pathlib import Path
 import uuid
 from typing import Tuple
+from config import GENERATED_DIR
 
 class CartoonGenerator:
     def __init__(self):
@@ -183,7 +184,7 @@ class CartoonGenerator:
         
         # Save the result
         output_filename = f"cartoon_{uuid.uuid4()}.jpg"
-        output_path = Path("generated") / output_filename
+        output_path = GENERATED_DIR / output_filename
         
         # Ensure output directory exists
         output_path.parent.mkdir(parents=True, exist_ok=True)
